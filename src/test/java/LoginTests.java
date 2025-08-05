@@ -17,7 +17,8 @@ public class LoginTests extends BaseTest {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        // TODO: Something's off with this URL. See if you can fix it before we start automation!
+        // TODO (for students): Review the configuration as part of HW15
+
         String url = "httpps://qa.koel.app/";
         driver.get(url);
         Assert.assertEquals(driver.getCurrentUrl(), url);
